@@ -24,7 +24,7 @@ public class JsAlert {
 
         try {
             // Navigate to target page
-            driver.get(Urls.BASE_URL.concat(Urls.JS_ALERT_SLUG));
+            driver.get(Urls.HEROKU_BASE_URL.concat(Urls.JS_ALERT_SLUG));
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5L));
             Boolean isAccepted = true;
             // Js Alert | Ok

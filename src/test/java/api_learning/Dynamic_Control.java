@@ -16,7 +16,7 @@ public class Dynamic_Control {
 
         try {
             // Navigate to target page
-            drive.get(Urls.BASE_URL.concat(Urls.DYNAMIC_CONTROL_SLUG));
+            drive.get(Urls.HEROKU_BASE_URL.concat(Urls.DYNAMIC_CONTROL_SLUG));
 
             // Define 2 form locator
             By checkboxFormSel = By.id("checkbox-example");

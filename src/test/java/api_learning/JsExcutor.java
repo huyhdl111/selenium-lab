@@ -5,11 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v85.page.Page;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import url.Urls;
-
-import java.time.Duration;
 
 public class JsExcutor {
     public static void main(String[] args) {
@@ -17,7 +13,7 @@ public class JsExcutor {
 
         try {
             // Navigate to target page
-            driver.get(Urls.BASE_URL.concat(Urls.FLOATING_MENU_SLUG));
+            driver.get(Urls.HEROKU_BASE_URL.concat(Urls.FLOATING_MENU_SLUG));
             JavascriptExecutor jsExcutor = (JavascriptExecutor) driver;
             PageHelper pageHelper = new PageHelper(jsExcutor);
 
@@ -34,7 +30,7 @@ public class JsExcutor {
             Thread.sleep(2000);
 
             // Go to Dynamic Control page
-            driver.get(Urls.BASE_URL.concat(Urls.DYNAMIC_CONTROL_SLUG));
+            driver.get(Urls.HEROKU_BASE_URL.concat(Urls.DYNAMIC_CONTROL_SLUG));
             By checkboxFormSel = By.id("checkbox-example");
             By inputFormSel = By.cssSelector("#input-example");
             WebElement checkboxFormElem = driver.findElement(checkboxFormSel);

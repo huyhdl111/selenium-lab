@@ -19,7 +19,7 @@ public class MouseHover {
         WebDriver driver = DriverFactory.getChromeDriver();
         try {
             // Navagate to the Hover page
-            driver.get(Urls.BASE_URL.concat(Urls.HOVER_SLUG));
+            driver.get(Urls.HEROKU_BASE_URL.concat(Urls.HOVER_SLUG));
 
             // Locate all image elem
             List<WebElement> figuresElem = driver.findElements(figureSel);
